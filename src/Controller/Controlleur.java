@@ -28,14 +28,12 @@ public class Controlleur implements ActionListener {
     private ListSelectionListener listSelectionListener;
 
     public Controlleur(Repertoire fenetre) {
-        //TESTE//
         listSelectionListener = new ListSelectionListener() {
             @Override
             public void valueChanged(ListSelectionEvent e) {
                 valueChangedList();
             }
         };
-        //TESTE//
         
         this.fenetre = fenetre;
         this.fenetre.setVisible(true);
